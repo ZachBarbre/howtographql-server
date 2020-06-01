@@ -1,0 +1,7 @@
+{
+  "name": "howtographql-server",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "Zach Barbre <zach.barbre@gmail.com>",
+  "license": "MIT"
+}
