@@ -10,8 +10,17 @@ let idCount = links.length;
 
 const resolvers = {
   Query: {
-    info: () => 'This is the API f a Hackernews Clone',
+    info: () => 'This is the API of a Hackernews Clone',
     feed: () => links,
+    link: (parent, args) => {
+      let linkIndex = '';
+      links.forEach((link, index) => {
+        if (link.id === agrs.id) {
+          linkIndex = index;
+        }
+      });
+      // return links[linkIndex];
+    }
   },
   Mutation: {
     post: (parent, agrs) => {
